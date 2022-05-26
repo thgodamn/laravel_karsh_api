@@ -6,6 +6,7 @@ php artisan migrate
 php artisan migrate:refres  
 
 php artisan db:seed  
+php artisan serve  
 
 Swagger: https://github.com/thgodamn/laravel_karsh_api/blob/master/swagger.json  
 
