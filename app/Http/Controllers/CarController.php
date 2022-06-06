@@ -11,7 +11,8 @@ class CarController extends Controller
     //
     public function getcar(Request $request) {
         $car = Car::find($request['car_id']);
-        $user = $car->user;
+        //$user = $car->user;
+        $user = User::find($request['user_id']);
 
         if ($user['api_token'] == $request['api_token']) {
             if (isset($car['in_used'])) {
